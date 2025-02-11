@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="b">kindly click here</button>
+    <p id="p">insert here</p> -->
+</body>
+    <script>
+        // document.getElementById("b").onclick=function
+        // (){
+        //     document.getElementById("p").innerText="hello world";
+        // }
+
+        // creating button through js
+        let button = document.createElement
+        ('button');
+        button.innerHTML = "<b>change text </b>";
+        button.id ="b";
+        document.body.appendChild(button);
+
+        //  creating a paragragh
+        let para = document.createElement
+        ("p");
+        para.id ="p";
+        para.innerText = "insert here";
+        document.body.appendChild(para);
+
+        // changing text
+        document.getElementById("b").addEventListener("click" ,function(){
+        document.getElementById("p").innerHTML=
+        "<b>hello world </b>";  
+        })
+
+
+        document.getElementById("b").onclick=function
+        (){
+            document.getElementById("p").innerHTML="<b>hello world</b>";
+        }
+    </script>
+
+</html>
